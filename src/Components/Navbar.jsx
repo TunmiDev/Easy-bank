@@ -3,7 +3,7 @@ import logo from "../assets/logo.svg";
 const Navbar = () => {
   return (
     <div>
-      <nav className="flex items-center justify-between px-12 py-3 bg-white shadow-md font-sans">
+      <nav className="flex items-center justify-between px-12 py-3 bg-white shadow-lg font-sans">
         {/*Logo Section */}
         <div className="flex items-center">
           <img src={logo} alt="easybank logo" />
