@@ -1,34 +1,44 @@
 import React from "react";
-import background from "../assets/bg-intro-desktop.svg";
-import phones from "../assets/image-mockups.png";
-const Home = () => {
+import bgIntrodesktop from "./../assets/bg-intro-desktop.svg";
+import bgIntromobile from "./../assets/bg-intro-mobile.svg";
+import mockUps from "./../assets/image-mockups.png";
+
+function Hero() {
   return (
-    <div className="flex flex-col lg:flex-row justify justify-between items-center px-6 lg:px-16 py-12 bg-gray-100">
-      {/* Text content */}
-      <div className="lg:w-1/2 text-center lg:text-left">
-        <h1 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
-          Next generation <br />
-          digital banking
+    <header className="h-auto lg:h-[calc(100svh-64px)] lg:px-[10%] md:px-[5%] flex flex-col-reverse gap-24 sm:gap-0 sm:flex-row justify-between items-center sm:overflow-hidden pb-4 sm:pb-0 bg-gray-100">
+      <div className="min-w-[40vw] px-8 sm:px-0 flex flex-col gap-4 items-center sm:items-start sm:gap-6 ">
+        <h1 className="text-4xl  font-[300]  sm:text-start lg:text-5xl xl:text-6xl  ">
+          Next generation digital banking
         </h1>
-        <p className="text-gray-400 ">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium
-          distinctio magni dolorum quibusdam aperiam ex corrupti veritatis
-          libero dicta sed voluptatibus sunt obcaecati ipsam minus, fuga optio
-          voluptate adipisci? Dignissimos.
+        <p className=" text-sm text-center sm:text-start sm:text-base lg:text-lg xl:text-xl xl:pr-24 text-neutral-grayish-blue ">
+          Take your financial life online. Your EasyBank account will be a
+          one-step-shop for spending, saving, budgeting, investing, and much
+          more.
         </p>
         {/*Button */}
         <button className="hidden md:flex bg-gradient-to-r from-primary to-secondary rounded-full text-white px-8 py-3 font-sans font-semibold hover:cursor-pointer">
           Request Invite
         </button>
       </div>
-
-      {/*Image Content */}
-      <div className=" relative flex items-center justify-center mt-12 lg:mt-0 lg:w-1/2 ">
-        <img src={background} alt="easybank background" className="" />
-        {/* <img src={phones} alt="phones" className="absolute" /> */}
+      <div className="relative w-full h-[40vh] md:min-w-[80vw] md:h-[55vh] md:self-start justify-start ">
+        <img
+          src={bgIntrodesktop}
+          alt="background"
+          className="absolute hidden md:block md:top-[-15%] lg:top-[-30%] xl:top-[-35%] 2xl:top-[-35%] "
+        />
+        <img
+          src={bgIntromobile}
+          alt="background"
+          className="absolute md:hidden top-0 w-full"
+        />
+        <img
+          src={mockUps}
+          alt="mockup"
+          className="absolute z-3 top-[-30%] md:w-[68%] md:top-[-5%] md:left-[13%] lg:w-[65%] lg:top-[-20%] xl:w-[60%] xl:top-[-20%] 2xl:w-[60%] 2xl:top-[-35%] "
+        />
       </div>
-    </div>
+    </header>
   );
-};
+}
 
-export default Home;
+export default Hero;
