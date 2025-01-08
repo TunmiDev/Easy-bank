@@ -6,6 +6,7 @@ import mockUps from "./../assets/image-mockups.png";
 function Hero() {
   return (
     <header className="h-auto px-6 lg:px-16 py-12 flex flex-col lg:flex-row sm:flex-row justify-between items-center sm:overflow-hidden pb-4 sm:pb-0 bg-gray-100">
+      {/*Text Section */}
       <div className="min-w-[50vw] px-8 sm:px-0 flex flex-col gap-4 items-center sm:items-start sm:gap-6 ">
         <h1 className="text-4xl  font-[300]  sm:text-start lg:text-5xl xl:text-6xl  pt-10 ">
           Next generation <br />
@@ -17,15 +18,16 @@ function Hero() {
           much more.
         </p>
         {/*Button */}
-        <button className="hidden md:flex bg-gradient-to-r from-primary to-secondary rounded-full text-white px-8 py-3 font-sans font-semibold hover:cursor-pointer mt-10">
+        <button className="hidden md:flex bg-gradient-to-r from-primary to-secondary rounded-full text-white px-8 py-3 font-sans font-normal hover:cursor-pointer mt-5 mb-5">
           Request Invite
         </button>
       </div>
+      {/*Image Section */}
       <div className="relative w-full h-[40vh] md:min-w-[80vw] md:h-[55vh] md:self-start justify-start ">
         <img
           src={bgIntrodesktop}
           alt="background"
-          className="absolute hidden md:block md:top-[-15%] lg:top-[-30%] xl:top-[-35%] 2xl:top-[-35%] "
+          className="absolute hidden md:visible md:block md:top-[-15%] lg:top-[-30%] xl:top-[-35%] 2xl:top-[-35%] "
         />
         <img
           src={bgIntromobile}
