@@ -5,18 +5,19 @@ import mockUps from "./../assets/image-mockups.png";
 
 function Hero() {
   return (
-    <header className="h-auto lg:h-[calc(100svh-64px)] lg:px-[10%] md:px-[5%] flex flex-col-reverse gap-24 sm:gap-0 sm:flex-row justify-between items-center sm:overflow-hidden pb-4 sm:pb-0 bg-gray-100">
-      <div className="min-w-[40vw] px-8 sm:px-0 flex flex-col gap-4 items-center sm:items-start sm:gap-6 ">
-        <h1 className="text-4xl  font-[300]  sm:text-start lg:text-5xl xl:text-6xl  ">
-          Next generation digital banking
+    <header className="h-auto px-6 lg:px-16 py-12 flex flex-col lg:flex-row sm:flex-row justify-between items-center sm:overflow-hidden pb-4 sm:pb-0 bg-gray-100">
+      <div className="min-w-[50vw] px-8 sm:px-0 flex flex-col gap-4 items-center sm:items-start sm:gap-6 ">
+        <h1 className="text-4xl  font-[300]  sm:text-start lg:text-5xl xl:text-6xl  pt-10 ">
+          Next generation <br />
+          digital banking
         </h1>
-        <p className=" text-sm text-center sm:text-start sm:text-base lg:text-lg xl:text-xl xl:pr-24 text-neutral-grayish-blue ">
-          Take your financial life online. Your EasyBank account will be a
-          one-step-shop for spending, saving, budgeting, investing, and much
-          more.
+        <p className=" text-sm text-center sm:text-start sm:text-base lg:text-lg xl:text-xl xl:pr-24 text-gray-500 pt-4 leading-5 ">
+          Take your financial life online. Your EasyBank <br /> account will be
+          a one-step-shop for spending, <br /> saving, budgeting, investing, and
+          much more.
         </p>
         {/*Button */}
-        <button className="hidden md:flex bg-gradient-to-r from-primary to-secondary rounded-full text-white px-8 py-3 font-sans font-semibold hover:cursor-pointer">
+        <button className="hidden md:flex bg-gradient-to-r from-primary to-secondary rounded-full text-white px-8 py-3 font-sans font-semibold hover:cursor-pointer mt-10">
           Request Invite
         </button>
       </div>
