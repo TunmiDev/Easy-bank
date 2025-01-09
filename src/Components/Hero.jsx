@@ -5,40 +5,43 @@ import mockUps from "./../assets/image-mockups.png";
 
 function Hero() {
   return (
-    <header className="h-auto px-6 lg:px-16 py-12 flex flex-col lg:flex-row sm:flex-row justify-between items-center sm:overflow-hidden pb-4 sm:pb-0 bg-gray-100">
-      {/*Text Section */}
-      <div className="min-w-[50vw] px-8 sm:px-0 flex flex-col gap-4 items-center sm:items-start sm:gap-6 ">
-        <h1 className="text-4xl  font-[300]  sm:text-start lg:text-5xl xl:text-6xl  pt-10 ">
-          Next generation <br />
-          digital banking
-        </h1>
-        <p className=" text-sm text-center sm:text-start sm:text-base lg:text-lg xl:text-xl xl:pr-24 text-gray-500 pt-4 leading-5 ">
-          Take your financial life online. Your EasyBank <br /> account will be
-          a one-step-shop for spending, <br /> saving, budgeting, investing, and
-          much more.
-        </p>
-        {/*Button */}
-        <button className="hidden md:flex bg-gradient-to-r from-primary to-secondary rounded-full text-white px-8 py-3 font-sans font-normal hover:cursor-pointer mt-5 mb-5">
-          Request Invite
-        </button>
-      </div>
-      {/*Image Section */}
-      <div className="relative w-full h-[40vh] md:min-w-[80vw] md:h-[55vh] md:self-start justify-start ">
+    <header className="relative bg-gray-100 py-12 lg:py-20 overflow-hidden flex flex-col lg:flex-row-reverse justify-center lg:justify-between items-center">
+      {/* Image Section */}
+      <div className="relative w-full lg:w-[70%] h-auto flex justify-end items-end">
+        {/* Background for Desktop */}
         <img
           src={bgIntrodesktop}
           alt="background"
-          className="absolute hidden md:visible md:block md:top-[-15%] lg:top-[-30%] xl:top-[-35%] 2xl:top-[-35%] "
+          className="absolute  lg:flex lg:w-full lg:h-auto lg:top-[-200px] lg:right-[-220px] z-0"
         />
-        <img
+        {/* Background for Mobile */}
+        <im
           src={bgIntromobile}
           alt="background"
-          className="absolute md:hidden top-0 w-full"
+          className="absolute lg:hidden top-0 left-0 w-full z-0"
         />
+        {/* Mockup Image */}
         <img
           src={mockUps}
           alt="mockup"
-          className="absolute z-3 top-[-30%] md:w-[68%] md:top-[-5%] md:left-[13%] lg:w-[65%] lg:top-[-20%] xl:w-[60%] xl:top-[-20%] 2xl:w-[60%] 2xl:top-[-35%] "
+          className="relative z-10  xl:w-[90%] lg:top-[-230px] lg:right-[-100px]"
         />
+      </div>
+
+      {/* Text Section */}
+      <div className="relative lg:w-[50%] text-center lg:text-left  lg:px-16 flex flex-col items-center lg:items-start mb-auto">
+        <h1 className="text-4xl  font-[300]  sm:text-start lg:text-5xl xl:text-6xl  pt-10">
+          Next generation digital banking
+        </h1>
+        <p className="mt-8 text-sm lg:text-base xl:text-lg text-gray-500 leading-8 lg:leading-7 max-w-[400px]">
+          Take your financial life online. Your EasyBank account will be a
+          one-stop-shop for spending, saving, budgeting, investing, and much
+          more.
+        </p>
+        {/* Button */}
+        <button className="mt-8 bg-gradient-to-r from-primary to-secondary rounded-full text-white px-8 py-3 text-sm lg:text-base font-medium hover:opacity-90 focus:outline-none">
+          Request Invite
+        </button>
       </div>
     </header>
   );
