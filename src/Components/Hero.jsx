@@ -5,26 +5,26 @@ import mockUps from "./../assets/image-mockups.png";
 
 function Hero() {
   return (
-    <header className="relative bg-gray-100 py-12 lg:py-20 overflow-hidden flex flex-col lg:flex-row-reverse justify-center lg:justify-between items-center">
+    <header className="relative bg-gray-100  lg:py-20 overflow-hidden flex flex-col lg:flex-row-reverse justify-center lg:justify-between items-center">
       {/* Image Section */}
-      <div className="relative w-full lg:w-[70%] h-auto flex justify-end items-end">
+      <div className="relative w-full lg:w-[70%] h-auto flex justify-center lg:justify-end items-end">
         {/* Background for Desktop */}
         <img
           src={bgIntrodesktop}
           alt="background"
-          className="absolute  lg:flex lg:w-full lg:h-auto lg:top-[-200px] lg:right-[-220px] z-0"
+          className="absolute hidden lg:block lg:w-full h-auto lg:top-[-200px] lg:right-[-220px] z-0"
         />
         {/* Background for Mobile */}
-        <im
+        <img
           src={bgIntromobile}
           alt="background"
-          className="absolute lg:hidden top-0 left-0 w-full z-0"
+          className="absolute block lg:hidden w-full h-auto top-0 left-0  z-0"
         />
         {/* Mockup Image */}
         <img
           src={mockUps}
           alt="mockup"
-          className="relative z-10  xl:w-[90%] lg:top-[-230px] lg:right-[-100px]"
+          className="relative z-10 w-[70%] sm:w-[80%] md:w-[60%] lg:w-[90%] lg:top-[-200px] lg:right-[-100px]"
         />
       </div>
 
