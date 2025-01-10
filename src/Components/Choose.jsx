@@ -21,7 +21,7 @@ const features = [
     icon: onboardingIcon,
     title: "Fast Onboarding",
     description:
-      "We don't do branches. Open your account in minutes online and start taking control of your finances right away.",
+      "We don't do branches. Open your account in minutes online and start taking control of your finances right",
   },
   {
     icon: apiIcon,
