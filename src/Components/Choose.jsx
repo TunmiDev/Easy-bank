@@ -33,7 +33,7 @@ const features = [
 
 function WhyChoose() {
   return (
-    <section className="bg-gray-50 py-16 px-6 lg:px-20">
+    <section className="bg-gray-200 py-16 px-6 lg:px-20">
       {/* Title and Description */}
       <div className="text-center lg:text-left max-w-2xl mx-auto lg:mx-0 mb-12">
         <h2 className="text-3xl font-bold lg:text-4xl mb-4 text-gray-900">

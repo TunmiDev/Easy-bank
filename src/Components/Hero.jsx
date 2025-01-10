@@ -5,7 +5,7 @@ import mockUps from "./../assets/image-mockups.png";
 
 function Hero() {
   return (
-    <header className="relative bg-gray-100  lg:py-20 overflow-hidden flex flex-col lg:flex-row-reverse justify-center lg:justify-between items-center">
+    <header className="relative bg-gray-50  lg:py-20 overflow-hidden flex flex-col lg:flex-row-reverse justify-center lg:justify-between items-center">
       {/* Image Section */}
       <div className="relative w-full lg:w-[70%] h-auto flex justify-center lg:justify-end items-end">
         {/* Background for Desktop */}
